@@ -7,6 +7,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'bootstrap-sass', '~> 3.3.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development do
@@ -24,4 +25,9 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'capybara'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
